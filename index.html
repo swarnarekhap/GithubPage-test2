@@ -135,7 +135,7 @@
 
     // --- Login with GitHub button logic ---
     const clientId = "Ov23lilH58e7sCmZt8ru"; // Replace with your real Client ID
-    const redirectUri = "https://yourdomain.com/api/auth/github/callback"; // Must match your GitHub app settings
+    const redirectUri = "https://github.com/api/auth/github/callback"; // Must match your GitHub app settings
 
     function loginWithGitHub() {
       window.location.href = `https://github.com/login/oauth/authorize?client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&scope=repo`;
